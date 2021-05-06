@@ -26,7 +26,7 @@ The code to run the ElemNet-TF2 model is provided inside the [`elemnet`](./elemn
 
 `python dl_regressors_tf2.py --config_file sample/sample-run.config`
 
-The config file defines all the related hyperparameters associated with the model training and model testing such as loss_type, training_data_path, test_data_path, label, input_type [elements_tl for ElemNet] etc. For transfer learning, you need to set 'model_path' [e.g. `sample/sample_model`]. The output log
+The config file defines all the related hyperparameters associated with the model training and model testing such as loss_type, training_data_path, test_data_path, label, input_type [elements_tl for ElemNet] etc. For transfer learning, you need to set 'model_path' [e.g. `model/sample_model`]. The output log
 from this sample run is provided in the `sample/sample.log` file. The trained model will be saved in [`data`](./model) folder.
 
 ## Developer Team

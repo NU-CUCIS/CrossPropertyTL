@@ -24,10 +24,10 @@ Here is a brief explanation about the folder content:
 
 The code to run the ElemNet-TF2 model is provided inside the [`elemnet`](./elemnet) folder. Inside the folder, you can run the model by passing a sample config file to the dl_regressors_tf2.py as follows:
 
-`python dl_regressors_tf2.py --config_file sample/sample-run.config`
+`python dl_regressors_tf2.py --config_file sample/sample-run_example_tf2.config`
 
 The config file defines all the related hyperparameters associated with the model training and model testing such as loss_type, training_data_path, test_data_path, label, input_type [elements_tl for ElemNet] etc. For transfer learning, you need to set 'model_path' [e.g. `model/sample_model`]. The output log
-from this sample run is provided in the `sample/sample.log` file. The trained model will be saved in [`data`](./model) folder.
+from will be shown in the [`log`] folder as `log/sample.log` file. The trained model will be saved in [`data`](./model) folder.
 
 ## Developer Team
 

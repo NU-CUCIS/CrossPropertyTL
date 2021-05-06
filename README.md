@@ -18,7 +18,7 @@ Here is a brief explanation about the folder content:
 
 * [`elemnet`](./elemnet): code for training the ElemNet-TF2 model from scratch or using transfer learning from a pretrained model [1], along with making predictions on test set seperately using a trained model.
 
-* [`data`](./data): the datasets used for training ElemNet model in [1].
+* [`data`](./data): the datasets used for training ElemNet-TF2 model in [1].
 
 ## Running the code
 

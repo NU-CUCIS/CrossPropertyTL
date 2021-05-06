@@ -1,4 +1,4 @@
-# Materials data used in the paper
+# Dataset
 
 The material properties used in [our paper] are downloaded from the following two open datasets and Matminer.
 

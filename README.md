@@ -20,6 +20,10 @@ Here is a brief explanation about the folder content:
 
 * [`data`](./data): the datasets used for training ElemNet-TF2 model in [1].
 
+* [`activation`](./activation): Jupyter Notebook to extract activations from each layer of pre-trained model trained on ElemNet-TF2.
+
+* [`prediction`](./prediction): Jupyter Notebook for performing model testing for ElemNet-TF2 model.
+
 ## Running the code
 
 The code to run the ElemNet-TF2 model is provided inside the [`elemnet`](./elemnet) folder. Inside the folder, you can run the model by passing a sample config file to the dl_regressors_tf2.py as follows:

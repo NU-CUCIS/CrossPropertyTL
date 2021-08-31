@@ -1,6 +1,6 @@
 # Dataset
 
-The material properties used in [our paper] are downloaded from the following two open datasets and Matminer.
+The material properties used in [our paper] are downloaded from the following two public datasets and Matminer.
 
 - The OQMD database [[link](http://oqmd.org/)]
 - The JARVIS database [[link](https://jarvis.nist.gov/)]

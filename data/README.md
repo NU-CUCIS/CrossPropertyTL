@@ -8,5 +8,3 @@ The material properties used in [our paper] are downloaded from the following tw
 
 As we cannot redistribute these two datasets, the datasets should be downloaded by the users and converted into proper format before use. Also, please cite the relevant papers as requested by the dataset authors.
 
-To reproduce our results exactly, we will provide a link to download the CSV files that will include the datasets used for training.
-

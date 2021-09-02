@@ -8,4 +8,4 @@ The material properties used in [our paper] are downloaded from the following tw
 
 As we cannot redistribute these two datasets, the datasets should be downloaded by the users and converted into proper format before use. Also, please cite the relevant papers as requested by the dataset authors.
 
-We have provided a sample dataset with train/validation/test split to run the code
+We have provided a sample dataset with train/validation/test split and actual training and test split of the datasets used in this work to run the code.

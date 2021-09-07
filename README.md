@@ -20,9 +20,9 @@ Here is a brief explanation about the folder content:
 
 * [`data`](./data): the datasets used for training ElemNet-TF2 model in [1].
 
-* [`activation`](./activation): Jupyter Notebook to extract activations from each layer of pre-trained model trained on ElemNet-TF2.
+* [`representation`](./representation): Jupyter Notebook to extract features from each layer of pre-trained model trained on ElemNet-TF2. We have also provided code to convert compound into elemental fraction and/or physical attributes.
 
-* [`prediction`](./prediction): Jupyter Notebook for performing model testing for ElemNet-TF2 model.
+* [`prediction`](./prediction): Jupyter Notebook to perform prediction using the trained model for ElemNet-TF2 model.
 
 ## Running the code
 

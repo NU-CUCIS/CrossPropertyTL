@@ -71,7 +71,7 @@ After training, you will get the following files:
 
 * The output log from the training will be saved in the [`log`](./log) folder as `log/sample-run_example_tf2.log` file.
 
-* The trained model will be saved in [`model`](./model) folder as `model/sample-run_example_tf2.h5` and `model/sample-run_example_tf2.json`. `.h5` file contains the weights values and `.json` contains the model's architecture. </br?
+* The trained model will be saved in [`model`](./model) folder as `model/sample-run_example_tf2.h5` and `model/sample-run_example_tf2.json`. `.h5` file contains the weights values and `.json` contains the model's architecture. </br>
 We also save the model in a newer version of the TensorFlow SavedModel format. The model architecture, and training configuration (including the optimizer, losses, and metrics) are stored in saved_model.pb. The weights are saved in the variables/ directory. For more information <a href="https://www.tensorflow.org/guide/keras/save_and_serialize">see here</a> 
 
 The above command runs a default task with an early stopping of 200 epochs on small dataset of target property (formation energy). This sample task can be used without any changes so that the user can get an idea of how the ElemNet model works. The sample task should take about 1-2 minute on an average when a GPU is available and give a test set MAE of 0.29-0.32 eV after the model training is finished.

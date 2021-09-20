@@ -37,11 +37,21 @@ Here is a brief description about the folder content:
 
 To use different representations (such as elemental fractions, physical attributes or extracted features) as input to ElemNet, you will need to create a customized dataset using a `.csv` file. You can prepare a customized dataset in the following manner:
 
-* Prepare a `.csv` file which contain two columns. The first column contains the compound, and the second column contains the value of target property. 
+1. Prepare a `.csv` file which contain two columns. The first column contains the compound, and the second column contains the value of target property as shown below:
+ 
+| pretty_comp | target property |
+| ----------- | --------------- |
+| KH2N        | -0.40           |
+| NiTeO4      | -0.82           |
 
-* Use the Jupyter Notebook in [`representation`](./representation) folder to pre-process and convert the first column of the `.csv` file into elemental fraction & physical attributes or to extract features using a pre-trained ElemNet model
+2. Use the Jupyter Notebook in [`representation`](./representation) folder to pre-process and convert the first column of the `.csv` file into elemental fraction, physical attributes or to extract features using a pre-trained ElemNet model. Above example when converted into elemental fraction the becomes: 
 
-* Split the customized dataset into train, validation and test set 
+| pretty_comp |  H  | ... | Pu | target property |
+| ----------- | --- | --- | -- | --------------- |
+| KH2N        | 0.5 | ... | 0  | -0.40           |
+| NiTeO4      | 0   | ... | 0  | -0.82           |
+
+3. Split the customized dataset into train, validation and test set.
 
 We have provided an example of customized datasets in the repository: `data/sample`. Here we have converted the first column of the `.csv` file into elemental fractions. Note that this is required for both training and predicting. 
 

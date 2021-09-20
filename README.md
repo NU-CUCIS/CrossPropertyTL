@@ -51,8 +51,12 @@ The code to run the ElemNet model is provided in the [`elemnet`](./elemnet) fold
 
 `python dl_regressors_tf2.py --config_file sample/sample-run_example_tf2.config`
 
-The config file defines all the related hyperparameters associated with the model training and model testing such as loss_type, training_data_path, val_data_path, test_data_path, label, input_type, etc. For transfer learning, you need to set 'model_path' [e.g. `model/sample_model`]. The output log
-from will be shown in the [`log`] folder as `log/sample-run_example_tf2.log` file. The trained model will be saved in [`model`](./model) folder. If you want to randomly initialize the weight of the last layer of the trained model as done in the work, set the `last_layer_with_weight` hyperparameter of the config file as `false`. You can use your own customized dataset as long as you correctly specify the training_data_path, val_data_path and test_data_path inside the config file.
+The config file defines all the related hyperparameters associated with the model training and model testing such as loss_type, training_data_path, val_data_path, test_data_path, label, input_type, etc.
+For transfer learning, you need to set 'model_path' [e.g. `model/sample_model`]. 
+The output log from the model training will be shown in the [`log`] folder as `log/sample-run_example_tf2.log` file. 
+The trained model will be saved in [`model`](./model) folder. 
+If you want to randomly initialize the weight of the last layer of the trained model as done in the work, set the `last_layer_with_weight` hyperparameter of the config file as `false`. 
+You can use your own customized dataset as long as you correctly specify the training_data_path, val_data_path and test_data_path inside the config file.
 
 The above command runs a default task with an early stopping of 200 epochs on small dataset of formation energy. This sample task can be used without any changes to give an idea of how the ElemNet model can be used. The sample task should take about 1-2 minute on an average when a GPU is available and give a test set MAE of 0.28-0.32 eV after the model training is finished.
 

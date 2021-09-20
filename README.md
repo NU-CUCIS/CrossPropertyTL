@@ -1,13 +1,17 @@
 # ElemNet2.0
 
-This repository contains the code for performing cross-property deep transfer learning framework to predict materials properties using elemental fraction (EF), physical attribute (PA) or extracted features as the model input. The code provides two major functions:
+This repository contains the code for performing cross-property deep transfer learning framework to predict materials properties using elemental fraction (EF), physical attribute (PA) or extracted features as the model input. The code provides the following functions:
 
+* Preprocess the customized dataset 
 * Train a ElemNet (Tensorflow Version 2) model with a customized dataset.
+* Use a pre-trained ElemNet model to perform transfer learning on customized dataset.
+* Use a pre-trained ElemNet model to perform features extraction on customized dataset.
 * Predict material properties of new compound with a pre-trained ElemNet model.
 
 It is recommended to train large dataset (e.g. OQMD, MP) from scratch (SC) and small datasets (DFT-computed or experimental datasets) using transfer learning methods.
 
 Please look at the following paper to read about the details of the cross-property deep transfer learning framework:
+
 Cross-property deep transfer learning framework for enhanced predictive analytics on small materials data
 
 

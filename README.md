@@ -20,18 +20,16 @@ Cross-property deep transfer learning framework for enhanced predictive analytic
 The basic requirement for using the files are a Python 3.6.3 Jupyter environment with the packages listed in `requirements.txt`.
 
 ## Source Files
-
-The code for training the ElemNet-TF2 model along with the various trained models produced in our work [1] are available in the [`elemnet` folder](./elemnet).
   
-Here is a brief explanation about the folder content:
+Here is a brief description about the folder content:
 
-* [`elemnet`](./elemnet): code for training the ElemNet-TF2 model from scratch or using transfer learning from a pretrained model [1], along with making predictions on test set seperately using a trained model.
+* [`elemnet`](./elemnet): code for training ElemNet model from scratch or using a pretrained ElemNet model to perform transfer learning.
 
-* [`data`](./data): the datasets used for training ElemNet-TF2 model in [1].
+* [`data`](./data): the datasets used for training ElemNet-TF2 model.
 
-* [`representation`](./representation): Jupyter Notebook to extract features from each layer of pre-trained model trained on ElemNet-TF2. We have also provided code to convert compound into elemental fraction and/or physical attributes.
+* [`representation`](./representation): Jupyter Notebook to perform feature extraction from a specific layer of pre-trained ElemNet model. We have also provided the code to convert compound into elemental fraction and physical attributes.
 
-* [`prediction`](./prediction): Jupyter Notebook to perform prediction using the trained model for ElemNet-TF2 model.
+* [`prediction`](./prediction): Jupyter Notebook to perform prediction using the pre-trained model for ElemNet-TF2 model.
 
 ## Running the code
 

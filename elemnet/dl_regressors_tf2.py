@@ -172,6 +172,7 @@ def run_regressors(train_X, train_y, valid_X, valid_y, test_X, test_y, logger=No
     save_path = config['save_path']
     loss_type = config['loss_type']
     keras_path = config['keras_path']
+    last_layer_with_weight = config['last_layer_with_weight']
     if 'dropouts' in hyper_params:
         dropouts = hyper_params['dropouts']
     else:
@@ -217,7 +218,10 @@ def run_regressors(train_X, train_y, valid_X, valid_y, test_X, test_y, logger=No
         rr.fprint('Restoring model from %s' % model_path)
         model_h5 = "%s.h5" % model_path
         model.load_weights(model_h5)
-
+        if not last_layer_with_weight:
+            rr.fprint('removing last layer to add model and adding dense layer without weight')
+            newl16 = Dense(1, activation=None)(model.layers[-2].output)  
+            model = Model(inputs=model.input, outputs=[newl16])
 
     assert optimizer == 'Adam' 
 

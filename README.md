@@ -52,7 +52,11 @@ The code to run the ElemNet model is provided in the [`elemnet`](./elemnet) fold
 `python dl_regressors_tf2.py --config_file sample/sample-run_example_tf2.config`
 
 The config file defines all the related hyperparameters associated with the model training and model testing such as loss_type, training_data_path, val_data_path, test_data_path, label, input_type, etc. For transfer learning, you need to set 'model_path' [e.g. `model/sample_model`]. The output log
-from will be shown in the [`log`] folder as `log/sample-run_example_tf2.log` file. The trained model will be saved in [`model`](./model) folder. If you want to randomly initialize the weight of the last layer of the trained model as done in the work, set the `last_layer_with_weight` hyperparameter of the config file as `false`.
+from will be shown in the [`log`] folder as `log/sample-run_example_tf2.log` file. The trained model will be saved in [`model`](./model) folder. If you want to randomly initialize the weight of the last layer of the trained model as done in the work, set the `last_layer_with_weight` hyperparameter of the config file as `false`. You can use your own customized dataset as long as you correctly specify the training_data_path, val_data_path and test_data_path inside the config file.
+
+The above command runs a default task with an early stopping of 200 epochs on small dataset of formation energy. This sample task can be used without any changes to give an idea of how the ElemNet model can be used. The sample task should take about 1-2 minute on an average when a GPU is available and give a test set MAE of 0.28-0.32 eV after the model training is finished.
+
+Note: Your <a href="https://machinelearningmastery.com/different-results-each-time-in-machine-learning/">results may vary</a> given the stochastic nature of the algorithm or evaluation procedure, the size of the dataset, the target property to perform the regression modelling for or differences in numerical precision. Consider running the example a few times and compare the average outcome.
 
 ## Developer Team
 
@@ -64,10 +68,16 @@ Please cite the following works if you are using ElemNet model:
 
 1. Vishu Gupta, Kamal Choudhary, Francesca Tavazza, Carelyn Campbell, Wei-keng Liao, Alok Choudhary, and Ankit Agrawal, “Cross-property deep transfer learning framework for enhanced predictive analytics on small materials data”.
 
-## Questions/Comments
+## Acknowledgements
 
-email: vishugupts2020@u.northwestern.edu or ankitag@eecs.northwestern.edu</br>
-Copyright (C) 2021, Northwestern University.<br/>
+The open-source implementation of ElemNet <a href="https://github.com/NU-CUCIS/ElemNet">here</a> have provided significant initial inspiration for the structure of this code-base.
+
+## Disclaimer
+
+The research code shared in this repository is shared without any support or guarantee on its quality. However, please do raise an issue if you spot something wrong or that could be improved and I will try my best to solve it.
+
+email: vishugupts2020@u.northwestern.edu
+Copyright (C) 2021, Northwestern University.
 See COPYRIGHT notice in top-level directory.
 
 ## Funding Support

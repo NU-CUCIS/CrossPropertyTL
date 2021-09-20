@@ -25,15 +25,29 @@ Here is a brief description about the folder content:
 
 * [`elemnet`](./elemnet): code for training ElemNet model from scratch or using a pretrained ElemNet model to perform transfer learning.
 
-* [`data`](./data): the datasets used for training ElemNet-TF2 model.
+* [`data`](./data): the datasets used for training ElemNet model.
 
 * [`representation`](./representation): Jupyter Notebook to perform feature extraction from a specific layer of pre-trained ElemNet model. We have also provided the code to convert compound into elemental fraction and physical attributes.
 
-* [`prediction`](./prediction): Jupyter Notebook to perform prediction using the pre-trained model for ElemNet-TF2 model.
+* [`prediction`](./prediction): Jupyter Notebook to perform prediction using the pre-trained model for ElemNet model.
 
-## Running the code
+## Example Use
 
-The code to run the ElemNet-TF2 model is provided inside the [`elemnet`](./elemnet) folder. Inside the folder, you can run the model by passing a sample config file to the dl_regressors_tf2.py as follows:
+### Create a customized dataset
+
+To use different representations (such as elemental fractions, physical attributes or extracted features) as input to ElemNet, you will need to create a customized dataset using a `.csv` file. You can prepare a customized dataset in the following manner:
+
+* Prepare a `.csv` file which contain two columns. The first column contains the compound, and the second column contains the value of target property. 
+
+* Use the Jupyter Notebook in [`representation`](./representation) folder to pre-process and convert the first column of the `.csv` file into elemental fraction & physical attributes or to extract features using a pre-trained ElemNet model
+
+* Split the customized dataset into train, validation and test set 
+
+We have provided an example of customized datasets in the repository: `data/sample`. Here we have converted the first column of the `.csv` file into elemental fractions. Note that this is required for both training and predicting. 
+
+### Run ElemNet model
+
+The code to run the ElemNet model is provided in the [`elemnet`](./elemnet) folder. In order to run the model you can pass a sample config file to the dl_regressors_tf2.py from inside of your elemnet directory:
 
 `python dl_regressors_tf2.py --config_file sample/sample-run_example_tf2.config`
 

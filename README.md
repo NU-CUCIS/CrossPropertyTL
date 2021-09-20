@@ -63,15 +63,15 @@ The code to run the ElemNet model is provided in the [`elemnet`](./elemnet) fold
 
 `python dl_regressors_tf2.py --config_file sample/sample-run_example_tf2.config`
 
-The config file defines all the related hyperparameters associated with the model training and model testing such as loss_type, training_data_path, val_data_path, test_data_path, label, input_type, etc.
+The config file defines all the related hyperparameters associated with the model training and model testing such as loss_type, training_data_path, val_data_path, test_data_path, label, input_type, etc. If you want to randomly initialize the weight of the last layer of the trained model as done in the work, set the `last_layer_with_weight` hyperparameter of the config file as `false`. 
 
 For transfer learning, you need to set 'model_path' [e.g. `model/sample_model`]. 
 
-The output log from the model training will be shown in the [`log`] folder as `log/sample-run_example_tf2.log` file. 
+After training, you will get the following files:
 
-The trained model will be saved in [`model`](./model) folder. 
+* The output log from the training will be saved in the [`log`](./log) folder as `log/sample-run_example_tf2.log` file.
 
-If you want to randomly initialize the weight of the last layer of the trained model as done in the work, set the `last_layer_with_weight` hyperparameter of the config file as `false`. 
+* The trained model will be saved in [`model`](./model) folder as `model/sample-run_example_tf2.h5` and `model/sample-run_example_tf2.json`. `.h5` file contains the weights values and `.json` contains the model's architecture. We also save the model in a newer version of the TensorFlow SavedModel format. The model architecture, and training configuration (including the optimizer, losses, and metrics) are stored in saved_model.pb. The weights are saved in the variables/ directory. For more information <a href="https://www.tensorflow.org/guide/keras/save_and_serialize">see here</a> 
 
 The above command runs a default task with an early stopping of 200 epochs on small dataset of target property (formation energy). This sample task can be used without any changes so that the user can get an idea of how the ElemNet model works. The sample task should take about 1-2 minute on an average when a GPU is available and give a test set MAE of 0.29-0.32 eV after the model training is finished.
 

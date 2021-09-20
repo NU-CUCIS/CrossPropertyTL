@@ -17,7 +17,9 @@ Cross-property deep transfer learning framework for enhanced predictive analytic
 
 ## Installation Requirements
 
-The basic requirement for using the files are a Python 3.6.3 Jupyter environment with the packages listed in `requirements.txt`.
+The basic requirement for using the files are a Python 3.6.3 Jupyter environment with the packages listed in `requirements.txt`. It is advisable to create an virtual environment with the correct dependencies.
+
+The work related experiments was performed on Linux Fedora 7.9 Maipo. The code should be able to work on other Operating Systems as well but it has not been tested else where.
 
 ## Source Files
   
@@ -71,9 +73,7 @@ The trained model will be saved in [`model`](./model) folder.
 
 If you want to randomly initialize the weight of the last layer of the trained model as done in the work, set the `last_layer_with_weight` hyperparameter of the config file as `false`. 
 
-You can use your own customized dataset as long as you correctly specify the training_data_path, val_data_path and test_data_path inside the config file.
-
-The above command runs a default task with an early stopping of 200 epochs on small dataset of formation energy. This sample task can be used without any changes to give an idea of how the ElemNet model can be used. The sample task should take about 1-2 minute on an average when a GPU is available and give a test set MAE of 0.28-0.32 eV after the model training is finished.
+The above command runs a default task with an early stopping of 200 epochs on small dataset of target property (formation energy). This sample task can be used without any changes so that the user can get an idea of how the ElemNet model works. The sample task should take about 1-2 minute on an average when a GPU is available and give a test set MAE of 0.28-0.32 eV after the model training is finished.
 
 Note: Your <a href="https://machinelearningmastery.com/different-results-each-time-in-machine-learning/">results may vary</a> given the stochastic nature of the algorithm or evaluation procedure, the size of the dataset, the target property to perform the regression modelling for or differences in numerical precision. Consider running the example a few times and compare the average outcome.
 

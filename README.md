@@ -2,10 +2,6 @@
 
 This repository contains the code for performing feature extraction and model training along with various models trained on different materials property using elemental fraction (EF), physical attribute (PA) or extracted features as the model input. It is recommended to train large dataset (e.g. OQMD, MP) from scratch (SC) and small datasets (DFT-computed or experimental datasets) using transfer learning methods shown below:
 
-<p align="center">
-  <img src="images/workflow.png" width="600">
-</p>
-
 ## Installation Requirements
 
 The basic requirement for using the files are a Python 3.6.3 Jupyter environment with the packages listed in `requirements.txt`.

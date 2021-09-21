@@ -51,7 +51,7 @@ To use different representations (such as elemental fractions, physical attribut
 | KH2N        | 0.5 | ... | 0  | -0.40           |
 | NiTeO4      | 0   | ... | 0  | -0.82           |
 
-3. Split the customized dataset into train, validation and test set.
+3. Split the customized dataset into train, validation and test set. We have used <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html">train_test_split</a> function of the sklearn library with a random seed of 1234567 to perform the train\validation\test split in our work.
 
 We have provided an example of customized datasets in the repository: `data/sample`. Here we have converted the first column of the `.csv` file into elemental fractions. Note that this is required for both training and predicting. 
 

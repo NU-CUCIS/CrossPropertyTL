@@ -44,7 +44,7 @@ To use different representations (such as elemental fractions, physical attribut
 | KH2N        | -0.40           |
 | NiTeO4      | -0.82           |
 
-2. Use the Jupyter Notebook in [`representation`](./representation) folder to pre-process and convert the first column of the `.csv` file into elemental fraction, physical attributes or to extract features using a pre-trained ElemNet model. Above example when converted into elemental fraction the becomes: 
+2. Use the Jupyter Notebook in [`representation`](./representation) folder to pre-process and convert the first column of the `.csv` file into elemental fraction, physical attributes or to extract features using a pre-trained ElemNet model. Above example when converted into elemental fraction becomes as follows: 
 
 | pretty_comp |  H  | ... | Pu | target property |
 | ----------- | --- | --- | -- | --------------- |

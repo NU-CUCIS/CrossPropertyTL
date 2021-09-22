@@ -75,7 +75,9 @@ To add customized input_type, please make changes to the `data_utils.py` as foll
   If you have the following `.csv` file where you have to use columns `a`, `b`, `c`, `d` to predict `pred`, you can add `new_input = ['a','b','c','d']` to the file.
 
 2. Add the array to the `input_atts` dictionary so that it can with `input_type` of the config. For example:
+
    `input_atts = {'new_input':new_input, 'elements':elements, ... , 'input32':input32}`
+   
    
 For transfer learning, you need to set 'model_path' [e.g. `model/sample_model`]. 
 

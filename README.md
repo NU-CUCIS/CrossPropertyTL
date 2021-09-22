@@ -74,7 +74,7 @@ We also save the model in a newer version of the TensorFlow SavedModel format in
 
 The above command runs a default task with an early stopping of 200 epochs on small dataset of target property (formation energy). This sample task can be used without any changes so that the user can get an idea of how the ElemNet model works. The sample task should take about 1-2 minute on an average when a GPU is available and give a test set MAE of 0.29-0.32 eV after the model training is finished.
 
-<b>Note: Your <a href="https://machinelearningmastery.com/different-results-each-time-in-machine-learning/">results may vary</a> given the stochastic nature of the algorithm or evaluation procedure, the size of the dataset, the target property to perform the regression modelling for or differences in numerical precision. Consider running the example a few times and compare the average outcome.</b>
+Note: Your <a href="https://machinelearningmastery.com/different-results-each-time-in-machine-learning/">results may vary</a> given the stochastic nature of the algorithm or evaluation procedure, the size of the dataset, the target property to perform the regression modelling for or differences in numerical precision. Consider running the example a few times and compare the average outcome.
 
 ## Developer Team
 

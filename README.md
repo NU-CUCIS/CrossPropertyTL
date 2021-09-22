@@ -66,13 +66,15 @@ The config file defines all the related hyperparameters associated with the mode
 To add customized input_type, please make changes to the `data_utils.py` as follows:
 
 1. Add a new array with the required columns (preferably near the place where other arrays are defined). For example:
+
 |  a  |  b  |  c  |  d  | pred |
 | --- | --- | --- | --- | ---- |
 | 0.1 | 0.3 | 0.5 | 0.7 | 0.9  |
 | 0.2 | 0.4 | 0.6 | 0.8 | 1.0  |
+
    If you have the following `.csv` file where you have to use columns `a`, `b`, `c`, `d` to predict `pred`, you can add `new_input = ['a','b','c','d']` to the file.
 
-2. Add the array to the `input_atts` dictionary so that it can with `input_type` of the config. For example:
+2. Add the array to the `input_atts` dictionary so that it can with input_type of the config and the `pred` will be used with label. For example:
 
    `input_atts = {'new_input':new_input, 'elements':elements, ... , 'input32':input32}`
    

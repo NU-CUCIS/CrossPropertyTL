@@ -76,7 +76,7 @@ To add customized input_type, please make changes to the `data_utils.py` as foll
 
    If you have the following `.csv` file where you have to use columns a, b, c, d to predict pred, you can add `new_input = ['a','b','c','d']` to the file.
 
-2. Add the array to the `input_atts` dictionary so that it can with input_type of the config and the pred will be used with label. For example:
+2. Add the array variable to the `input_atts` dictionary so that it can be used with input_type of the config (and pred used with label). For example:
 
    `input_atts = {'new_input':new_input, 'elements':elements, ... , 'input32':input32}`
    

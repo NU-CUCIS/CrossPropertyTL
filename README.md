@@ -63,6 +63,20 @@ The code to run the ElemNet model is provided in the [`elemnet`](./elemnet) fold
 
 The config file defines all the related hyperparameters associated with the model training and model testing such as loss_type, training_data_path, val_data_path, test_data_path, label, input_type, etc. If you want to randomly initialize the weight of the last layer of the trained model as done in the work, set the `last_layer_with_weight` hyperparameter of the config file as `false`. 
 
+To add customized input_type, please make changes to the `data_utils.py` as follows:
+
+1. Add a new array with the required columns (preferably near the place where other arrays are defined). For example:
+
+|  a  |  b  |  c  |  d  | pred |
+| --- | --- | --- | --- | ---- |
+| 0.1 | 0.3 | 0.5 | 0.7 | 0.9  |
+| 0.2 | 0.4 | 0.6 | 0.8 | 1.0  |
+
+  If you have the following `.csv` file where you have to use columns `a`, `b`, `c`, `d` to predict `pred`, you can add `new_input = ['a','b','c','d']` to the file.
+
+2. Add the array to the `input_atts` dictionary so that it can with `input_type` of the config. For example:
+   `input_atts = {'new_input':new_input, 'elements':elements, ... , 'input32':input32}`
+   
 For transfer learning, you need to set 'model_path' [e.g. `model/sample_model`]. 
 
 After training, you will get the following files:

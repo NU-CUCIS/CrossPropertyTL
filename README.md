@@ -25,7 +25,7 @@ Here is a brief description about the folder content:
 
 * [`elemnet`](./elemnet): code for training ElemNet model from scratch or using a pretrained ElemNet model to perform transfer learning.
 
-* [`data`](./data): the datasets used for training ElemNet model.
+* [`data`](./data): 39 different datasets used for training ElemNet model.
 
 * [`representation`](./representation): Jupyter Notebook to perform feature extraction from a specific layer of pre-trained ElemNet model. We have also provided the code to convert compound into elemental fraction and physical attributes.
 

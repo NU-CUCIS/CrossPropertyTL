@@ -6,4 +6,4 @@ The material properties used in [our paper] are downloaded from the following tw
 - The JARVIS database [[link](https://jarvis.nist.gov/)]
 - Matminer [[link](https://hackingmaterials.lbl.gov/matminer/)]
 
-We have provided a sample dataset with train/validation/test split and the datasets which was used in this work along with sample splits to run the code.
+We have provided a sample dataset with train/validation/test split and the datasets which was used in this work along with exact splits to run the code.

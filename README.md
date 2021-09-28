@@ -1,4 +1,4 @@
-# ElemNet2.0
+# CrossPropertyTL
 
 This repository contains the code for performing cross-property deep transfer learning framework to predict materials properties using elemental fraction (EF), physical attribute (PA) or extracted features as the model input. The code provides the following functions:
 

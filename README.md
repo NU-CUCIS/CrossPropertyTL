@@ -102,7 +102,7 @@ The code was developed by Vishu Gupta from the <a href="http://cucis.ece.northwe
 
 Please cite the following works if you are using ElemNet model:
 
-1. Vishu Gupta, Kamal Choudhary, Francesca Tavazza, Carelyn Campbell, Wei-keng Liao, Alok Choudhary, and Ankit Agrawal, “Cross-property deep transfer learning framework for enhanced predictive analytics on small materials data”.
+1. Vishu Gupta, Kamal Choudhary, Francesca Tavazza, Carelyn Campbell, Wei-keng Liao, Alok Choudhary, and Ankit Agrawal, “Cross-property deep transfer learning framework for enhanced predictive analytics on small materials data”.[<a href="https://www.nature.com/articles/s41467-021-26921-5">Paper</a>]
 
 ## Acknowledgements
 

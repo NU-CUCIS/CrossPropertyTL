@@ -105,8 +105,8 @@ Please cite the following works if you are using ElemNet model:
 1. Vishu Gupta, Kamal Choudhary, Francesca Tavazza, Carelyn Campbell, Wei-keng Liao, Alok Choudhary, and Ankit Agrawal, “Cross-property deep transfer learning framework for enhanced predictive analytics on small materials data”[<a href="https://doi.org/10.1038/s41467-021-26921-5">Paper</a>]
 
 ```tex
-@article{goodall2020predicting,
-  title={Predicting materials properties without crystal structure: Deep representation learning from stoichiometry},
+@article{gupta2021crossproperty,
+  title={Cross-property deep transfer learning framework for enhanced predictive analytics on small materials data},
   author={Gupta, Vishu and Choudhary, Kamal and Tavazza, Francesca and Campbell, Carelyn and Liao, Wei-keng and Choudhary, Alok and Agrawal, Ankit},
   journal={Nature Communications},
   volume={12},

@@ -1,23 +1,21 @@
 # CrossPropertyTL
 
-This repository contains the code for performing cross-property deep transfer learning framework to predict materials properties using elemental fraction (EF), physical attribute (PA) or extracted features as the model input. The code provides the following functions:
+This repository contains the code for performing cross-property deep transfer learning to predict materials properties using elemental fractions (EF), physical attributes (PA) or extracted features as the model input. The code provides the following functions:
 
-* Train a ElemNet model with a customized dataset.
-* Use a pre-trained ElemNet model to perform transfer learning on customized dataset.
-* Predict material properties of new compound with a pre-trained ElemNet model.
+* Train a ElemNet model on a given dataset.
+* Use a pre-trained ElemNet model to perform transfer learning on a given target dataset.
+* Predict material properties of new compounds with a pre-trained ElemNet model.
 
 It is recommended to train large dataset (e.g. OQMD, MP) from scratch (SC) and small datasets (DFT-computed or experimental datasets) using transfer learning methods.
 
-Please look at the following paper to read about the details of the cross-property deep transfer learning framework:
-
-Cross-property deep transfer learning framework for enhanced predictive analytics on small materials data
+Please look at the Nature Communications 2021 paper (reference below) for details of the cross-property deep transfer learning framework.
 
 
 ## Installation Requirements
 
 The basic requirement for using the files are a Python 3.6.3 Jupyter environment with the packages listed in `requirements.txt`. It is advisable to create an virtual environment with the correct dependencies.
 
-The work related experiments was performed on Linux Fedora 7.9 Maipo. The code should be able to work on other Operating Systems as well but it has not been tested else where.
+The work related experiments was performed on Linux Fedora 7.9 Maipo. The code should be able to work on other Operating Systems as well but it has not been tested elsewhere.
 
 ## Source Files
   
@@ -27,9 +25,9 @@ Here is a brief description about the folder content:
 
 * [`data`](./data): 39 different datasets used for training ElemNet model.
 
-* [`representation`](./representation): Jupyter Notebook to perform feature extraction from a specific layer of pre-trained ElemNet model. We have also provided the code to convert compound into elemental fraction and physical attributes.
+* [`representation`](./representation): Jupyter Notebook to perform feature extraction from a specific layer of pre-trained ElemNet model. We have also provided the code to convert chemical formula of a compound into elemental fractions and physical attributes.
 
-* [`prediction`](./prediction): Jupyter Notebook to perform prediction using the pre-trained model for ElemNet model.
+* [`prediction`](./prediction): Jupyter Notebook to perform prediction using the pre-trained ElemNet model.
 
 ## Example Use
 
@@ -98,11 +96,9 @@ Note: Your <a href="https://machinelearningmastery.com/different-results-each-ti
 
 The code was developed by Vishu Gupta from the <a href="http://cucis.ece.northwestern.edu/">CUCIS</a> group at the Electrical and Computer Engineering Department at Northwestern University.
 
-## Publications
+## Publication
 
-Please cite the following works if you are using ElemNet model:
-
-1. Vishu Gupta, Kamal Choudhary, Francesca Tavazza, Carelyn Campbell, Wei-keng Liao, Alok Choudhary, and Ankit Agrawal, “Cross-property deep transfer learning framework for enhanced predictive analytics on small materials data”[<a href="https://doi.org/10.1038/s41467-021-26921-5">Paper</a>]
+1. Vishu Gupta, Kamal Choudhary, Francesca Tavazza, Carelyn Campbell, Wei-keng Liao, Alok Choudhary, and Ankit Agrawal, “Cross-property deep transfer learning framework for enhanced predictive analytics on small materials data,” Nature Communications, 12, 6595 (2021) [<a href="https://doi.org/10.1038/s41467-021-26921-5">DOI</a>] [<a href="https://www.nature.com/articles/s41467-021-26921-5.pdf">PDF</a>]
 
 ```tex
 @article{gupta2021crossproperty,
@@ -118,11 +114,11 @@ Please cite the following works if you are using ElemNet model:
 
 ## Acknowledgements
 
-The open-source implementation of ElemNet <a href="https://github.com/NU-CUCIS/ElemNet">here</a> have provided significant initial inspiration for the structure of this code-base.
+The open-source implementation of ElemNet <a href="https://github.com/NU-CUCIS/ElemNet">here</a> provided significant initial inspiration for the structure of this code-base.
 
 ## Disclaimer
 
-The research code shared in this repository is shared without any support or guarantee on its quality. However, please do raise an issue if you find anything wrong and I will try my best to improve upon it.
+The research code shared in this repository is shared without any support or guarantee on its quality. However, please do raise an issue if you find anything wrong and I will try my best to address it.
 
 email: vishugupta2020@u.northwestern.edu
 

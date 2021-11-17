@@ -125,7 +125,9 @@ The open-source implementation of ElemNet <a href="https://github.com/NU-CUCIS/E
 The research code shared in this repository is shared without any support or guarantee on its quality. However, please do raise an issue if you find anything wrong and I will try my best to improve upon it.
 
 email: vishugupta2020@u.northwestern.edu
+
 Copyright (C) 2021, Northwestern University.
+
 See COPYRIGHT notice in top-level directory.
 
 ## Funding Support
